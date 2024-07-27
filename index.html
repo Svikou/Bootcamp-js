@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="id1">My Heading 1</h1>
+
+<button type="button" onclick="changeColor()">Click Me!</button>
+
+<script>
+const colors = ['red', 'green', 'blue', 'purple', 'orange'];
+let currentIndex = 0;
+
+function changeColor() {
+    var element = document.getElementById('id1');
+    element.style.color = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+}
+</script>
+
+</body>
+</html>
